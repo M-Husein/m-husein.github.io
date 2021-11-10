@@ -1,5 +1,5 @@
 {
-    "name": "spa-github-pages",
+    "name": "m-husein.github.io",
     "icons": [
         {
             "src": "/favicon/green-grid-144-168-192-512x512.png",
@@ -8,6 +8,6 @@
         }
     ],
     "theme_color": "#000000",
-    "background_color": "#007800",
+    "background_color": "#ffffff",
     "display": "browser"
 }
