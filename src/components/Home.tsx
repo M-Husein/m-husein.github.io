@@ -15,7 +15,7 @@ const RepoReadmeLink: React.VFC = () => (
 );
 
 export const Home: React.VFC = () => (
-  <div>
+  <div className="container-fluid">
     <P>
       This is an example single page app built with React and React&nbsp;Router
       using <code>BrowserRouter</code>. Navigate with the links below and

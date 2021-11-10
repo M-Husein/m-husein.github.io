@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { DarkModeButton } from './ui/DarkModeButton';
 import { GitHubIconLink } from './ui/GitHubIconLink';
-import { globalCss, styled } from './stitches.config';
+import { styled } from './stitches.config'; // globalCss,
 import { Home } from './components/Home';
 import { ExampleComponent } from './components/ExampleComponent';
 import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
@@ -10,11 +10,11 @@ import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
 import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
 
-const AppContainer = styled('div', {
-  maxWidth: '540px',
-  padding: '12px 15px 25px',
-  margin: '0 auto',
-});
+// const AppContainer = styled('div', {
+//   maxWidth: '540px',
+//   padding: '12px 15px 25px',
+//   margin: '0 auto',
+// });
 
 const HeaderContainer = styled('header', {
   display: 'flex',
@@ -39,10 +39,10 @@ const BreadcrumbsNav = styled('nav', {
 });
 
 export const App: React.VFC = () => {
-  globalCss();
+  // globalCss();
 
   return (
-    <AppContainer>
+    <>
       <HeaderContainer>
         <H1>Single Page Apps for GitHub Pages</H1>
         <HeaderIconContainer>
@@ -73,6 +73,8 @@ export const App: React.VFC = () => {
         />
         <Route component={PageNotFound} />
       </Switch>
-    </AppContainer>
+    </>
   );
 };
+
+// <AppContainer></AppContainer>
